@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript">
+        function takePhoto()
+        {
+            var iFrame;
+            iFrame = document.createElement("iframe");
+            iFrame.setAttribute("src", "ios://openPhoto");
+            document.body.appendChild(iFrame);
+            iFrame.parentNode.removeChild(iFrame);
+            iFrame = null;
+
+        }
+    </script>
+    <head>
+        <meta charset="UTF-8">
+            <title></title>
+    </head>
+    <body>
+        <input type="button" value="takePhoto" onclick="takePhoto()" top></input>
+        <input type="button" value="selectPicture" onclick="selectPicture()"></input>
+        <input type="button" value="getLocation" onclick="getLocation()"></input>
+        <input type="button" value="scan" onclick="scan()"></input>
+        <input type="button" value="share" onclick="share()"></input>
+        <input type="button" value="back" onclick="back()"></input>
+        
+    </body>
+</html>
